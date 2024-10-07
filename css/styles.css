@@ -19,6 +19,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -230,7 +231,7 @@ textarea:focus {
     font-size: 36px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
-    margin-bottom: 168px;
+    margin-bottom: auto;
   }
 
   .mobile-menu-item:not(:last-child) {
@@ -248,6 +249,7 @@ textarea:focus {
   .mobile-contacts-link {
     font-weight: 500;
     font-size: 20px;
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
@@ -344,6 +346,10 @@ textarea:focus {
     gap: 12px;
   }
 
+  .pg-contacts-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
   .pg-contacts-link {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -414,11 +420,8 @@ textarea:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  max-width: 169px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 169px;
+  height: 56px;
   border-style: none;
   border-radius: 4px;
   margin-left: auto;
@@ -485,7 +488,7 @@ textarea:focus {
   }
 
   .hero-header {
-    max-width: 469px;
+    min-width: 469px;
     margin-bottom: 48px;
   }
 }
@@ -569,6 +572,18 @@ textarea:focus {
     flex-basis: 264px;
     gap: 8px;
   }
+
+  .studio-item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .studio-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 /* =============== /STUDIO STYLES ============== */
@@ -612,6 +627,10 @@ textarea:focus {
   margin-bottom: 8px;
 }
 
+.team-p {
+  margin-bottom: 8px;
+}
+
 .team-link {
   display: flex;
   justify-content: center;
@@ -621,7 +640,6 @@ textarea:focus {
 .team-link-item {
   height: 40px;
   width: 40px;
-  margin-top: 8px;
 }
 
 .team-link-link {
@@ -941,6 +959,7 @@ textarea:focus {
 @media screen and (min-width: 1158px) {
   .footer .container {
     flex-wrap: nowrap;
+    align-items: baseline;
     column-gap: 0;
     margin-left: auto;
     margin-right: auto;
